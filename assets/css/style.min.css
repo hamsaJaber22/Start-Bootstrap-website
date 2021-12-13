@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
+    font-family: project
+}
+
+html {
+    --secColor: rgba(255, 255, 255, 0.7);
+    --mainColor: #f4623a;
+    --aboutColor: rgba(255, 255, 255, 0.75);
+    --serviceColor: #6c757d
+}
+
+.container {
+    width: 80%;
+    margin: auto
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    padding-top: 20px
+}
+
+.navbar .container {
+    overflow: auto
+}
+
+.logo {
+    float: left;
+    width: 35%;
+    color: var(--secColor);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Merriweather Sans'
+}
+
+.nav {
+    float: left;
+    width: 65%;
+    text-align: right;
+    font-size: 35
+}
+
+@media (max-width:600.98px) {
+    .logo {
+        width: 100%;
+        text-align: center
+    }
+    .nav {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px
+    }
+}
+
+.item-ist {
+    display: inline-block
+}
+
+.item {
+    list-style: none
+}
+
+.link-nav {
+    text-decoration: none;
+    color: var(--secColor);
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: 'Merriweather Sans'
+}
+
+.content-header {
+    background-image: url(../img/bg-masthead.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 -140
+}
+
+.content-header-item {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 100px
+}
+
+.main-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    width: 35%;
+    margin: auto;
+    font-family: 'Merriweather Sans'
+}
+
+.line {
+    background-color: var(--mainColor);
+    height: 3px;
+    width: 80px;
+    display: block;
+    margin: 20px auto
+}
+
+.paragraph {
+    color: var(--secColor);
+    font-size: 15px;
+    width: 32%;
+    margin: auto
+}
+
+.link {
+    color: #fff;
+    margin-top: 30px;
+    background-color: var(--mainColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    border-radius: 39px;
+    padding: 20px 50px;
+    margin: 30px auto;
+    display: block;
+    font-family: 'Merriweather Sans'
+}
+
+@media (max-width:700.98px) {
+    .content-header-item {
+        padding-top: 130px
+    }
+    .main-title {
+        width: 80%
+    }
+    .paragraph {
+        width: 70%
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .content-header-item {
+        padding-top: 140px
+    }
+    .main-title {
+        width: 80%
+    }
+    .paragraph {
+        width: 70%
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .content-header-item {
+        padding-top: 140px
+    }
+    .main-title {
+        width: 80%
+    }
+    .paragraph {
+        width: 70%
+    }
+}
+
+.header .overlay {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, .8) 0, rgba(92, 77, 66, .8) 100%);
+    height: 100%
+}
+
+.about {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--mainColor)
+}
+
+.about-heading {
+    color: #fff;
+    font-family: 'Merriweather Sans'
+}
+
+.about .line {
+    background-color: #fff
+}
+
+.about-description {
+    color: var(--aboutColor);
+    width: 42%;
+    margin: auto;
+    font-family: Merriweather
+}
+
+.about .link {
+    color: #000;
+    background-color: #fff;
+    font-family: 'Merriweather Sans'
+}
+
+.services {
+    padding-top: 100px;
+    text-align: center
+}
+
+.services-heading {
+    text-transform: capitalize
+}
+
+.services-item {
+    overflow: auto
+}
+
+.service-item {
+    margin-top: 70px;
+    float: left;
+    width: 25%
+}
+
+.services-item .fas {
+    color: var(--mainColor);
+    font-size: 50px;
+    margin-bottom: 15px
+}
+
+.sevice-title {
+    text-transform: capitalize;
+    font-family: 'Merriweather Sans'
+}
+
+.sevice-description {
+    color: var(--serviceColor);
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 5%
+}
+
+@media (max-width:600.98px) {
+    .service-item {
+        width: 100%
+    }
+    .services-item .fas {
+        font-size: 30px
+    }
+    .sevice-title {
+        font-size: 15px
+    }
+    .sevice-description {
+        font-size: 12px
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .service-item {
+        width: 50%
+    }
+}
+
+.portfolio {
+    padding-top: 100px
+}
+
+.portfolio .portfolio-item {
+    float: left;
+    width: 33.33%;
+    position: relative
+}
+
+.portfolio-items {
+    overflow: hidden
+}
+
+.portfolio img {
+    display: block;
+    width: 100%
+}
+
+.portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0x;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    opacity: 0
+}
+
+.overlay .content {
+    text-align: center;
+    padding-top: 105px;
+    line-height: 25px
+}
+
+@media (max-width:575.98px) {
+    .portfolio .portfolio-item {
+        width: 100%
+    }
+    .overlay .content {
+        text-align: center;
+        padding-top: 105px
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .portfolio .portfolio-item {
+        width: 50%
+    }
+    .overlay .content {
+        text-align: center;
+        padding-top: 50px
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .overlay .content {
+        text-align: center;
+        padding-top: 50px
+    }
+}
+
+.main-portfolio {
+    text-transform: uppercase;
+    color: var(--secColor);
+    font-size: 15px
+}
+
+.sec-portfolio {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 22px
+}
+
+.portfolio-item:hover .overlay {
+    opacity: .9
+}
+
+.download {
+    background-color: #343a40;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center
+}
+
+.download-heading {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Merriweather Sans'
+}
+
+.download .link {
+    color: #000;
+    background-color: #fff;
+    font-family: 'Merriweather Sans'
+}
+
+.contact {
+    margin-top: 100px
+}
+
+.contact-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Merriweather Sans'
+}
+
+.contact-paragraph {
+    color: var(--serviceColor);
+    width: 30%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center
+}
+
+.contact-items {
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px
+}
+
+.contact-item {
+    float: left;
+    width: 50%;
+    text-align: center
+}
+
+.contact-item .fas {
+    display: block;
+    font-size: 40px;
+    color: #6c757d;
+    margin-bottom: 10px
+}
+
+@media (max-width:575.98px) {
+    .contact-item {
+        width: 100%;
+        float: none;
+        margin-top: 30px
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .contact-item {
+        width: 50%;
+        float: none;
+        margin: auto;
+        margin-top: 30px
+    }
+}
+
+.contact-item .email {
+    color: var(--mainColor)
+}
+
+.footer {
+    color: var(--serviceColor);
+    background-color: #f8f9fa;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+    margin-top: 70px;
+    font-family: Merriweather
+}
